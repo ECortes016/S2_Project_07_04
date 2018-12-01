@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+   
+   Author: Emmanuel Cortes Castaneda  
+   Date: 11.30.18      
+   
+   Filename: jb_styles.css
+
+   This file contains the screen styles used with the 
+   Jersey Buoys home page
+
+*/
+
+/* WINDOW STYLES */
+
+html {
+    height: 100%;
+    width: 100%;
+    background-image: url(jb_back2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    min-width: 640px;
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+    background-color: whitesmoke;
+}
+
+/* HEADER STYLES */
+
+/* Mobile Styles */
