@@ -18,8 +18,7 @@
 /* WINDOW STYLES */
 
 html {
-    height: 100%;
-    width: 100%;
+
     background-image: url(jb_back2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -36,4 +35,68 @@ body {
 
 /* HEADER STYLES */
 
-/* Mobile Styles */
+#img1 {
+    width: 100%;
+    display: block;
+    float: right;
+}
+
+body header {
+    background-color: whitesmoke
+}
+
+/* NAV STYLES */
+
+.mainmenu {
+    display: block;
+}
+
+.submenu {
+    width: 100%;
+}
+
+.top li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #6FBAEE
+}
+
+
+
+/* DROPDOWN MENU */
+
+ul.submenu {
+    display: none;
+}
+
+li a.submenuTitle:hover+ul.submenu,
+ul.submenu:hover {
+    display: block;
+}
+
+/* BODY STYLES */
+
+section#left {
+    display: block;
+    width: 50%
+}
+
+section#right {
+    width: 35%;
+}
+
+/* FOOTER STYLES */
+
+footer,
+footer>a {
+    text-align: center;
+    color: dodgerblue;
+    background-color: lightblue;
+}
+
+footer>a:hover {
+    color: darkblue
+}
