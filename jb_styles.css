@@ -35,9 +35,20 @@ body {
 
 /* HEADER STYLES */
 
+header {
+    background: url(jb_back1.png);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
 #img1 {
-    width: 100%;
+    width: 40%;
+    position: relative;
     display: block;
+    border: grey outset;
+    border-width: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -60,7 +71,7 @@ header {
     width: 25%;
     display: block;
     background-color: #6FBAEE;
-    line-height: 2em;
+    line-height: 3em;
 }
 
 .submenu li {
@@ -116,7 +127,10 @@ section p {
     background-color: whitesmoke;
     border: black solid;
     border-radius: 5px;
-    box-shadow: grey 15px 15px 10px
+    border-width: 3px;
+    box-shadow: grey 10px 10px 10px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.1em
 }
 
 h1 {
@@ -124,26 +138,30 @@ h1 {
     padding-bottom: 15px;
     text-align: center;
     font-size: 3em;
-}
+    font-family: 'Indie Flower', cursive;
 
-
-#slang {
-    text-align: center;
 }
 
 .slang {
+    margin: 20px auto 20px auto;
+    text-align: center;
     padding: 15px;
+    width: 40%;
+    border: black solid;
+    font-family: 'Oxygen', sans-serif;
 }
 
 /* FOOTER STYLES */
 
 footer,
 footer>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
-    color: dodgerblue;
-    background-color: lightblue;
+    color: black;
+    background-color: #6FBAEE;
 }
 
 footer>a:hover {
-    color: darkblue
+    color: white;
 }
