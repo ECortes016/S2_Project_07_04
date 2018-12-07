@@ -16,6 +16,7 @@
 */
 
 /* WINDOW STYLES */
+/* The window is given a background image with no repeat, taking up 100% of the page length and width. The body is taking up 100% height and width while being centered by using the margins. The header is given a background image with no repeat and the size set to 'cover'. The logo image is set to a width of 35% and that is also being centered by using the margins. */
 
 html {
     background-image: url(jb_back2.png);
@@ -42,7 +43,7 @@ header {
 }
 
 #img1 {
-    width: 40%;
+    width: 35%;
     position: relative;
     display: block;
     border: grey outset;
@@ -57,10 +58,7 @@ header {
 }
 
 /* NAV STYLES */
-
-.mainmenu {
-    display: block;
-}
+/* The main headings inside of the nav are being centered with subheadings which aren't being showed, which will only show while hovering over the main links. All are taking 100% width of the body. While hovering over the links the background will change color and the text will turn white. */
 
 .submenuTitle {
     text-align: center;
@@ -69,7 +67,6 @@ header {
 .horizontal li {
     float: left;
     width: 25%;
-    display: block;
     background-color: #6FBAEE;
     line-height: 3em;
 }
@@ -85,27 +82,27 @@ header {
 
 nav.horizontal a:hover,
 nav.horizontal a:active {
-    background-color: rgb(31, 73, 125);
+    background-color: rgb(0, 115, 255);
     color: white;
-}
-
-/* DROPDOWN MENU */
-
-ul.submenu {
-    display: none;
-    position: absolute;
 }
 
 ul.submenu li {
     width: 100%;
 }
 
+ul.submenu {
+    display: none;
+    position: absolute;
+}
+
 a.submenuTitle:hover+ul.submenu,
 ul.submenu:hover {
     display: block;
+    widows: 100%;
 }
 
 /* BODY STYLES */
+/* The container collapse is added to the section element with a width of 50% and it is being centered. The paragraph inside of the section is centered as well with a border running along it. The h1 heading is placed underneath the paragraph, also centered, followed by all of the slang terms placed in an article which are rounded out to make them look like bubbles */
 
 section {
     clear: both;
@@ -130,7 +127,7 @@ section p {
     border-width: 3px;
     box-shadow: grey 10px 10px 10px;
     font-family: 'Oxygen', sans-serif;
-    font-size: 1.1em
+    font-size: 1.1em;
 }
 
 h1 {
@@ -144,14 +141,22 @@ h1 {
 
 .slang {
     margin: 20px auto 20px auto;
-    text-align: center;
     padding: 15px;
-    width: 40%;
+    width: 55%;
     border: black solid;
+    border-radius: 25px;
+    box-shadow: grey 10px 10px 10px;
     font-family: 'Oxygen', sans-serif;
+    display: -webkit-inline-flex;
+    display: flex;
+
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 /* FOOTER STYLES */
+/* Padding is added to the footer so that it is more space around it and while hovering over the links, the text will turn white. */
 
 footer,
 footer>a {
@@ -164,4 +169,19 @@ footer>a {
 
 footer>a:hover {
     color: white;
+}
+
+/* MEDIA QUERIES */
+/* While displaying the page on a mobile device, the h1 heading as well as the article will not be shown and The header image will take up 100% of the screen width */
+
+@media only screen and (max-width: 480px) {
+
+    #img1 {
+        width: 100%;
+        border: none;
+    }
+
+    article, h1 {
+        display: none;
+    }
 }
